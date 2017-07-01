@@ -7,6 +7,8 @@
 <!-- Custom styles for this template -->
 <link href="../css/carousel.css" rel="stylesheet">
 <link href="../css/website.css" rel="stylesheet">
+
+<script src="../js/main.js"></script>
 </head>
 <body>
 
@@ -45,28 +47,30 @@
 						underneath to send me a direct email or you can choise to use one
 						of the other methods of communication displayed on the right.</p>
 				</div>
+				<form method="post">
 				<div class="margin_top_tiny">
 				<div class="col-md-6">
 					<b>Email:</b> <br>
-					<input class="input_large input_padding" type="email">
+					<input id="emailID" class="input_large input_padding" type="email">
 				</div>
 				<div class="col-md-6">
 					<b>Subject:</b> <br>
-					<input class="input_large input_padding" type="text">
+					<input id="subjectID" class="input_large input_padding" type="text">
 				</div>
 				<div class="col-md-12 margin_top_tiny">
 					<div>
 						<b>Message:</b><br>
-						<textarea class="input_padding input_textarea"></textarea>
+						<textarea id="messageID" class="input_padding input_textarea"></textarea>
 					</div>
 					<div align="right">
-						<input type="button" value="Send">
+						<input type="button" value="Send" onclick="sendEmail()">
 					</div>
 				</div>
 				</div>
+				</form>
 
 			</div>
-			<div class="col-md-4 margin_top_small graybackground" height="100%">
+			<div class="col-md-4 margin_top_small graybackground">
 				<p>
 					<b>Email:</b><br> pascal.van.latum@hva.nl
 				</p>
